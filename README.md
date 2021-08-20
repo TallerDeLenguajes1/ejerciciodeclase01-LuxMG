@@ -4,7 +4,7 @@
 En el primer problema ocurre una excepción del tipo *IndexOutOfRangeException*. Esta ocurre al iterar sobre un arreglo, cuando nos pasamos del rango de índices. En este caso la excepción salta cuando intentamos mostrar la posición 5 del arreglo "list", posición que no existe.
     
 ### Problema 2
-En el segundo problema ocurre una excepción del tipo *OverflowException*. Esta ocurre cuando intenta asignarse en una variable un valor que sobrepasa los límites del tipo. En este caso la excepción salta cuando se intenta asignar en la variable "result" que es de tipo byte un valor distinto de 1 o 0 (en este caso se intenta asignar 1800).
+En el segundo problema ocurre una excepción del tipo *OverflowException*. Esta ocurre cuando intenta asignarse en una variable un valor que sobrepasa los límites del tipo. En este caso la excepción salta cuando se intenta asignar en la variable "result" que es de tipo byte un valor mucho más grande de los admitidos (en este caso se intenta asignar 1800).
     
 ### Problema 3
 En el tercer problema ocurre una excepción del tipo *NullReferenceException*. Esta ocurre cuando intentamos mostrar o usar valores que son nulos. En este caso la excepción salta cuando intentamos mostrar el "Auto2", ya que está inicializado en *null* y no posee los datos que se buscan mostrar.
