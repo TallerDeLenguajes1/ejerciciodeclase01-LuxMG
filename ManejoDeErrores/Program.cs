@@ -13,10 +13,22 @@ namespace ManejoDeErrores
             list[3] = "Wednesday";
             list[4] = "Thursday";
 
-            for (int i = 0; i <= 5; i++)
+            try
             {
-                Console.WriteLine(list[i].ToString());
+                for (int i = 0; i <= 5; i++)
+                {
+                    Console.WriteLine(list[i].ToString());
+                }
             }
+            catch (IndexOutOfRangeException e)
+            {
+                Console.WriteLine("Error: valor fuera de rango");
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine("Error inesperado");
+            }
+            
             Console.ReadLine();
         }
     }

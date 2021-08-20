@@ -11,8 +11,21 @@ namespace Problema02
 
             num1 = 30;
             num2 = 60;
-            result = Convert.ToByte(num1 * num2);
-            Console.WriteLine("{0} x {1} = {2}", num1, num2, result);
+
+            try
+            {
+                result = Convert.ToByte(num1 * num2);
+                Console.WriteLine("{0} x {1} = {2}", num1, num2, result);
+            }
+            catch (OverflowException e)
+            {
+                Console.WriteLine("Los numeros son demasiado grandes para ser convertidos a byte");
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine("Error inesperado");
+            }
+
             Console.ReadLine();
         }
     }

@@ -7,11 +7,13 @@ namespace Problema03
     {
         static void Main(string[] args)
         {
-            Auto Auto1 = CrearAutoFiat(2020);            
-            MostrarAuto(Auto1);            
-
-            Auto Auto2 = CrearAutoPeugeot();
-            MostrarAuto(Auto2);
+            
+                Auto Auto1 = CrearAutoFiat(2020);
+                if(Auto1 != null) MostrarAuto(Auto1);
+            
+                Auto Auto2 = CrearAutoPeugeot();
+                if(Auto2 != null) MostrarAuto(Auto2);
+            
         }
 
         static Auto CrearAutoFiat(int? anio = null)
